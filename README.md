@@ -31,22 +31,23 @@ The following modules have been implemented:
 
 
 ● OOP realization via nn.Model:
-○ class Transformer
-■ class Encoder
-● class “encoder layer”
-■ class Decoder
-● class “decoder layer”
-○ class “self-attention”
-■ class “multi head attention”
-■ class “masked scaled dot-product
-attention”
-○ class “Skip-connection”
-○ class “LayerNorm”
-■ class “Positional Encoding”
-■ class “Embedding”
-○ class AnkiDataset
-■ Class BPE
-○ class AnkiBPEDataloader
+
+    ○ class Transformer
+        ■ class Encoder
+            ● class “encoder layer”
+        ■ class Decoder
+            ● class “decoder layer”
+                ○ class “self-attention”
+                    ■ class “multi head attention”
+                    ■ class “masked scaled dot-product attention”
+                ○ class “Skip-connection”
+                ○ class “LayerNorm”
+        ■ class “Positional Encoding”
+        ■ class “Embedding”
+    ○ class AnkiDataset
+        ■ Class BPE
+    ○ class AnkiBPEDataloader
+
 ● PreNorm
 ● Training pipeline
 ● Greedy inference pipeline
