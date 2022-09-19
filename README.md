@@ -2,7 +2,10 @@
 
 ## About The Project
 
-1) Implementation of Transformer architecture,
+1) Implementation of Transformer architecture from `Attention Is All You Need` paper:
+
+        https://arxiv.org/pdf/1706.03762.pdf
+
 2) Training on Anki Eng-Rus MT dataset for translation task.
 
 ## Getting Started
