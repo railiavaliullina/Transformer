@@ -49,9 +49,15 @@ The following modules have been implemented:
     ○ class AnkiBPEDataloader
 
 ● PreNorm
+
 ● Training pipeline
+
 ● Greedy inference pipeline
+
 ● Beam search inference pipeline
+
 ● Minor improvements (label smoothing, initialization+normalization)
+
 ● BLEU score calculation
+
 ● Batch masks for padded sentences and decoder target input
