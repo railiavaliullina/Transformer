@@ -1,10 +1,56 @@
 # Transformer
 
+## About The Project
 
-Файл для запуска: executor/executor.py
+1) Implementation of Transformer architecture,
+2) Training on Anki Eng-Rus MT dataset for translation task.
 
-Логи: executor/mlruns.rar
+## Getting Started
 
-Графики точности и лосса : saved_files/plots/
+File to run:
 
-График расстояния Левенштейна на инференсе: saved_files/plots/inference_levenshtein.PNG, по оси y - усредненное на по всем предыдущим шагам расстояние, по оси x - проинференсенное количество предложений. (Для ~1000 предложений среднее значение = ~96)
+    /executor/executor.py 
+
+MlFlow logs are in: 
+
+    executor/mlruns.rar
+
+Visualization of accuracy on the training and test samples, loss are in: 
+
+    saved_files/plots/
+    
+Visualization of Levenshtein distance on inference: 
+
+    saved_files/plots/inference_levenshtein.PNG
+
+on the y-axis - the distance averaged over all previous steps, on the x-axis - the inferential number of sentences. (For ~1000 offers average = ~96)
+
+## Implementation details
+
+The following modules have been implemented:
+
+
+● OOP realization via nn.Model:
+○ class Transformer
+■ class Encoder
+● class “encoder layer”
+■ class Decoder
+● class “decoder layer”
+○ class “self-attention”
+■ class “multi head attention”
+■ class “masked scaled dot-product
+attention”
+○ class “Skip-connection”
+○ class “LayerNorm”
+■ class “Positional Encoding”
+■ class “Embedding”
+○ class AnkiDataset
+■ Class BPE
+○ class AnkiBPEDataloader
+● PreNorm
+● Training pipeline
+● Greedy inference pipeline
+● Beam search inference pipeline
+● Minor improvements (label smoothing, initialization+normalization)
+● BLEU score calculation
+● Batch masks for padded sentences and decoder target input
