@@ -23,7 +23,7 @@ Visualization of Levenshtein distance on inference:
 
     saved_files/plots/inference_levenshtein.PNG
 
-on the y-axis - the distance averaged over all previous steps, on the x-axis - the inferential number of sentences. (For ~1000 offers average = ~96)
+on the y-axis - the distance averaged over all previous steps, on the x-axis - the number of inferenced sentences. (For ~1000, average = ~96)
 
 ## Implementation details
 
